@@ -2,9 +2,9 @@
   "name": "matf-course-levi9",
   "version": "1.0.0",
   "description": "\"snake-food-game\"",
-  "main": "snake.js",
+  "main": "./backend/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./backend/index.js"
   },
   "repository": {
     "type": "git",
