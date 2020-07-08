@@ -1,34 +1,35 @@
-function loadUsername() {
-    let person = prompt("Please enter your name", "Ana Miloradovic");
-    let username = "";
+let ime = "";
 
-    if (person == null || person == "") {
-        username = "Unknown username";
+function ucitajIme() {
+    let osoba = prompt("Please enter your name", "John Doe");
+
+    if (osoba == null || osoba == "") {
+        ime = "User cancelled the prompt.";
     } else {
-        username = person;
+        ime = osoba;
     }
-    
-    return username;
+
+    return ime;
 };
 
 
-const sendResult = async (username, result) => {
-    try { 
+const posaljiRezultat = async(ime, rez) => {
+    try {
         const URL = 'http://localhost:3002/';
         const response = await fetch(URL, {
-            method : 'POST',
-            headers : {
+            method: 'POST',
+            headers: {
                 'Content-Type': 'application/json'
             },
-            mode : 'cors',
-            body : JSON.stringify({
-                name : username,
-                score : result
+            mode: 'cors',
+            body: JSON.stringify({
+                name: ime,
+                score: rez
             })
         });
         const jsonResponse = await response.json();
         console.log(jsonResponse);
-        
+
     } catch (err) {
         console.error(err);
     }

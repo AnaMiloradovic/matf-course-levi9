@@ -26,6 +26,10 @@ let right = new Audio();
 let left = new Audio();
 let down = new Audio();
 
+
+ucitajIme();
+
+
 // dead.src = "audio/dead.mp3";
 // eat.src = "audio/eat.mp3";
 // up.src = "audio/up.mp3";
@@ -138,6 +142,7 @@ function draw(){
     if(snakeX < box || snakeX > 17 * box || snakeY < 3*box || snakeY > 17*box || collision(newHead,snake)){
         clearInterval(game);
         dead.play();
+        posaljiRezultat(ime, score);
     }
     
     snake.unshift(newHead);
@@ -150,6 +155,9 @@ function draw(){
 // call draw function every 100 ms
 
 let game = setInterval(draw,100);
+
+
+
 
 
 
