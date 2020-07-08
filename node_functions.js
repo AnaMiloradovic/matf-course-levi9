@@ -1,5 +1,5 @@
 function loadUsername() {
-    let person = prompt("Please enter your name", "Nevena Soldat");
+    let person = prompt("Please enter your name", "Ana Miloradovic");
     let username = "";
 
     if (person == null || person == "") {
