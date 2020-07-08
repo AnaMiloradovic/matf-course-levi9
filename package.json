@@ -1,0 +1,19 @@
+{
+  "name": "matf-course-levi9",
+  "version": "1.0.0",
+  "description": "\"snake-food-game\"",
+  "main": "snake.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnaMiloradovic/matf-course-levi9.git"
+  },
+  "author": "Ana Miloradovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnaMiloradovic/matf-course-levi9/issues"
+  },
+  "homepage": "https://github.com/AnaMiloradovic/matf-course-levi9#readme"
+}
