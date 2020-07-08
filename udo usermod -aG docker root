@@ -1,0 +1,21 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+   Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+   Active: [0;1;32mactive (running)[0m since Wed 2020-07-08 20:44:01 CEST; 2h 34min ago
+     Docs: https://docs.docker.com
+ Main PID: 26993 (dockerd)
+    Tasks: 13
+   Memory: 34.7M
+      CPU: 2.773s
+   CGroup: /system.slice/docker.service
+           └─26993 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Jul 08 20:43:57 ana-ThinkPad-T430s dockerd[26993]: time="2020-07-08T20:43:57.540006017+02:00" level=warning msg="Your kernel does not support cgroup rt period"
+Jul 08 20:43:57 ana-ThinkPad-T430s dockerd[26993]: time="2020-07-08T20:43:57.540029852+02:00" level=warning msg="Your kernel does not support cgroup rt runtime"
+Jul 08 20:43:57 ana-ThinkPad-T430s dockerd[26993]: time="2020-07-08T20:43:57.540258384+02:00" level=info msg="Loading containers: start."
+Jul 08 20:43:58 ana-ThinkPad-T430s dockerd[26993]: time="2020-07-08T20:43:58.666238136+02:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Jul 08 20:44:00 ana-ThinkPad-T430s dockerd[26993]: time="2020-07-08T20:44:00.258236547+02:00" level=info msg="Loading containers: done."
+Jul 08 20:44:00 ana-ThinkPad-T430s dockerd[26993]: time="2020-07-08T20:44:00.283335296+02:00" level=info msg="Docker daemon" commit=48a66213fe graphdriver(s)=overlay2 version=19.03.12
+Jul 08 20:44:00 ana-ThinkPad-T430s dockerd[26993]: time="2020-07-08T20:44:00.283438654+02:00" level=info msg="Daemon has completed initialization"
+Jul 08 20:44:01 ana-ThinkPad-T430s dockerd[26993]: time="2020-07-08T20:44:01.595756452+02:00" level=info msg="API listen on /var/run/docker.sock"
+Jul 08 20:44:01 ana-ThinkPad-T430s systemd[1]: Started Docker Application Container Engine.
+Jul 08 20:46:30 ana-ThinkPad-T430s systemd[1]: Started Docker Application Container Engine.

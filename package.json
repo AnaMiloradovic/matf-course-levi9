@@ -1,7 +1,8 @@
+
 {
-  "name": "matf-course-levi9",
+  "name": "matf-kurs",
   "version": "1.0.0",
-  "description": "\"snake-food-game\"",
+  "description": "snake-food-game",
   "main": "./backend/index.js",
   "scripts": {
     "start": "node ./backend/index.js"
