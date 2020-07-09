@@ -10,7 +10,7 @@ const pomeraj = 32;
 
 //ucitavanje slika-slikom predstavljamo pozadinu i hranu tj. krofne
 const pesak = new Image();
-pesak.src = "img/sand1.jpeg";
+pesak.src = "img/sand.png";
 const krofnaSlika = new Image();
 krofnaSlika.src = "img/food.png";
 
