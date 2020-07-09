@@ -90,6 +90,8 @@ function collision(head,array){
     return false;
 }
 
+
+
 // draw everything to the canvas
 
 function draw(){
@@ -142,6 +144,7 @@ function draw(){
     if(snakeX < box || snakeX > 17 * box || snakeY < 3*box || snakeY > 17*box || collision(newHead,snake)){
         clearInterval(game);
         dead.play();
+        window.alert("Game over! Your score is: " + score);
         posaljiRezultat(ime, score);
     }
     
@@ -155,24 +158,6 @@ function draw(){
 // call draw function every 100 ms
 
 let game = setInterval(draw,100);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
